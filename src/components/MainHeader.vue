@@ -2,7 +2,7 @@
     <header id="info-nav">
         <div class="container">
 
-            <nav class="navbar-info">
+            <nav class="navbar">
                 <div class="hours">
                     <p><i class="fas fa-clock"></i> Open Hours: Mon - Sat - 9:00 - 18:00</p>
                 </div>
@@ -56,16 +56,15 @@ export default {
 <style lang="scss" scoped>
 
 @import "../assets/scss/variabili.scss";
+@import "../assets/scss/mixins.scss";
 
 #info-nav {
     background-color: $outer-space;
 
-    .navbar-info {
-        display: flex;
-        align-items: center;
+    .navbar {
+        @include navbar;
         font-size: 12px;
         padding: 8px 10px;
-        white-space: nowrap;
 
         .hours {
             margin-right: auto;

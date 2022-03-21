@@ -1,1 +1,18 @@
 @import "./variabili.scss";
+
+@mixin navbar {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+@mixin overlay {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.5;
+}

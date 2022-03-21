@@ -5,6 +5,8 @@
     <mainHeader />
 
     <!-- main -->
+    <mainContent />
+    
       <!-- sezioni main -->
 
     <!-- footer -->
@@ -14,11 +16,13 @@
 
 <script>
 import mainHeader from './components/MainHeader.vue';
+import mainContent from './components/MainContent.vue';
 
 export default {
   name: 'App',
   components: {
     mainHeader,
+    mainContent,
   }
 }
 </script>
