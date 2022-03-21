@@ -4,15 +4,13 @@
 
             <nav class="navbar">
                 <div class="logo">
-                    <h4>NEXGEN</h4>
+                    <h4><span>NEX</span>GEN</h4>
                 </div>
 
-                <ol class="navbar-link">
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
-                    <li><a href="#">link</a></li>
+                <ol class="link-wrap">
+                    <li v-for="(links, i) in navLinks" :key="i">
+                        <a :href="links.href">{{ links.link }}</a>
+                    </li>
                 </ol>
 
                 <div class="get-in">
@@ -28,6 +26,32 @@
 
 export default {
     name: 'secJumbotron',
+    data() {
+        return {
+            navLinks: [
+                {
+                    href: '#',
+                    link: 'home',
+                },
+                {
+                    href: '#',
+                    link: 'services',
+                },
+                {
+                    href: '#',
+                    link: 'skills',
+                },
+                {
+                    href: '#',
+                    link: 'partners',
+                },
+                {
+                    href: '#',
+                    link: 'blog',
+                },
+            ]
+        }
+    }
 }
 
 </script>
@@ -53,18 +77,22 @@ export default {
 
         .navbar {
             @include navbar;
+            text-transform: uppercase;
+            gap: 20px;
+            padding-top: 20px;
+            font-weight: 500;
 
             .logo {
                 margin-right: auto;
+                letter-spacing: 0.35rem;
 
             }
 
-            .navbar-link {
+            .link-wrap {
                 display: contents;
             }
 
             .get-in {
-
             }
         }
     }
