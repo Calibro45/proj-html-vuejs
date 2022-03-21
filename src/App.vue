@@ -2,6 +2,7 @@
   <div id="app">
 
     <!-- header -->
+    <mainHeader />
 
     <!-- main -->
       <!-- sezioni main -->
@@ -12,10 +13,12 @@
 </template>
 
 <script>
+import mainHeader from './components/MainHeader.vue';
 
 export default {
   name: 'App',
   components: {
+    mainHeader,
   }
 }
 </script>

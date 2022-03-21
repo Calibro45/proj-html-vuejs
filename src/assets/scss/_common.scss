@@ -1,6 +1,7 @@
 @import "~@fontsource/poppins/index.css";
 @import "~@fontsource/poppins/500.css";
 @import "~@fontsource/poppins/700.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
 @import "./variabili.scss";
 @import "./mixins.scss";
 
@@ -13,4 +14,19 @@
 html {
     font-size: 16px;
     font-family: "Poppins", sans-serif;
+    color: $manatee;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.container {
+    max-width: 830px;
+    margin: 0 auto;
 }
