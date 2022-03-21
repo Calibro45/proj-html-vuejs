@@ -18,6 +18,16 @@
                 </div>
             </nav>
 
+            <div class="title-wrap">
+                <h1 class="title">
+                    <span>Logistics</span> 
+                    that goes further.
+                </h1>
+                <p class="subtitle">For 20 years working with the most innovative in the field of transport.</p>
+                <button class="get-cta">get in touch</button>
+                <button class="read-cta">read more</button>
+            </div>
+
         </div>  
     </section>
 </template>
@@ -74,6 +84,7 @@ export default {
 
     .container {
         position: relative;
+        padding: 5px 10px;
 
         .navbar {
             @include navbar;
@@ -81,6 +92,7 @@ export default {
             gap: 20px;
             padding-top: 20px;
             font-weight: 500;
+            margin-bottom: 80px;
 
             .logo-wrap {
                 margin-right: auto;
@@ -105,7 +117,39 @@ export default {
             }
 
             .get-in button {
-                background-color: $blue-lagoon;
+                @include buttonGreen;
+            }
+        }
+
+        .title-wrap {
+            width: 50%;
+            margin-left: auto;
+            padding: 30px 40px;
+
+            .title {
+                font-size: 3.5rem;
+                line-height: 1.1;
+                margin-bottom: 30px;
+                color: $gray-nurse;
+
+                span {
+                    background: linear-gradient(0deg, transparent 10%, rgba($blue-lagoon,0.8) 55%, transparent 50%);
+                }
+            }
+
+            .subtitle {
+                margin-bottom: 30px;
+                font-size: 1.125rem;
+                color: #919194;
+            }
+
+            .get-cta {
+                @include buttonGreen;
+                margin-right: 15px;
+            }
+
+            .read-cta {
+                @include buttonTransparent;
             }
         }
     }

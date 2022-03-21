@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
+    flex-wrap: wrap;
 }
 
 @mixin overlay {
@@ -30,4 +31,13 @@
     color: $gray-nurse;
     border-radius: 2px;
     font-weight: 700;
+}
+
+@mixin buttonGreen {
+    background-color: $blue-lagoon;
+}
+
+@mixin buttonTransparent {
+    background-color: transparent;
+    border: 1px solid $blue-lagoon;
 }
