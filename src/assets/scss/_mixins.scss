@@ -16,3 +16,18 @@
     background-color: black;
     opacity: 0.5;
 }
+
+@mixin logo {
+    color: $blue-lagoon;
+    background-color: rgba($blue-lagoon, 0.2);
+    border-radius: 999px 0 0 999px;
+    padding: 5px 0 5px 15px;
+}
+
+@mixin button {
+    text-transform: uppercase;
+    padding: 10px 18px;
+    color: $gray-nurse;
+    border-radius: 2px;
+    font-weight: 700;
+}

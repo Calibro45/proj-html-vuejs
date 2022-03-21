@@ -26,6 +26,15 @@ a {
     color: currentColor;
 }
 
+button {
+    @include button;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 .container {
     max-width: 830px;
     margin: 0 auto;

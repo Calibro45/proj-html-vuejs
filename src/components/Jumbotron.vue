@@ -3,8 +3,8 @@
         <div class="container">
 
             <nav class="navbar">
-                <div class="logo">
-                    <h4><span>NEX</span>GEN</h4>
+                <div class="logo-wrap">
+                    <h4 class="logo"><span>NEX</span>GEN</h4>
                 </div>
 
                 <ol class="link-wrap">
@@ -82,17 +82,30 @@ export default {
             padding-top: 20px;
             font-weight: 500;
 
-            .logo {
+            .logo-wrap {
                 margin-right: auto;
                 letter-spacing: 0.35rem;
 
+                .logo {
+                    color: $gray-nurse;
+
+                    span {
+                        @include logo;
+                    }
+                }
             }
 
             .link-wrap {
                 display: contents;
+                color: $gray-nurse;
+
+                li a {
+                    padding: $padding-link;
+                }
             }
 
-            .get-in {
+            .get-in button {
+                background-color: $blue-lagoon;
             }
         }
     }
