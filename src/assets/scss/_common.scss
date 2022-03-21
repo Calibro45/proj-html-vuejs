@@ -35,7 +35,24 @@ button:hover {
     cursor: pointer;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .container {
     max-width: 830px;
     margin: 0 auto;
+}
+
+.section-title {
+    @include sectionTitle;
+}
+
+.title-dark {
+    color: $river-bed;
+}
+
+.title-light {
+    color: $gray-nurse;
 }

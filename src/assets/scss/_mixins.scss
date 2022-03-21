@@ -41,3 +41,22 @@
     background-color: transparent;
     border: 1px solid $blue-lagoon;
 }
+
+@mixin row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 10px;
+}
+
+@mixin sectionTitle {
+    text-transform: uppercase;
+    color: $blue-lagoon;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+@mixin backTitle {
+    color: $blue-lagoon;
+    background-color: rgba($gumbo, 0.4);
+    border-radius: 4px;
+}
