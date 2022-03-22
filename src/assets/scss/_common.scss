@@ -35,7 +35,8 @@ button:hover {
     cursor: pointer;
 }
 
-input {
+input,
+textarea {
     border-radius: 4px;
     outline: none;
     border: none;

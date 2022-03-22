@@ -19,6 +19,9 @@
         <!-- Newsletter -->
         <newsLetter />
 
+        <!-- Contact us -->
+        <contactUs />
+
 
     </main>
 </template>
@@ -30,6 +33,7 @@ import companySection from './Company.vue';
 import loghiSection from './Loghi.vue';
 import editorialSection from './Editorial.vue';
 import newsLetter from './Newsletter.vue';
+import contactUs from './ContacUs.vue';
 
 export default {
     name: 'mainContent',
@@ -40,6 +44,7 @@ export default {
         loghiSection,
         editorialSection,
         newsLetter,
+        contactUs,
     }
     
 }
