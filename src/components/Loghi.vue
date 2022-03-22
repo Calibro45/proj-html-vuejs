@@ -31,5 +31,28 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import "../assets/scss/variabili.scss";
+@import "../assets/scss/mixins.scss";
+
+#loghi {
+    background-color: $saltpan;
+
+    .row{
+        align-items: center;
+        gap: 30px;
+        min-height: 200px;
+
+        .logo-wrap {
+            height: 30px;
+            flex-grow: 1;
+
+            img {
+                object-fit: cover;
+                filter: invert(1) contrast(0.5);
+            }
+        }
+    }
+}
     
 </style>
