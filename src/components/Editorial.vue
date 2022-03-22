@@ -51,7 +51,6 @@ export default {
             ]
         }
     }
-    
 }
 </script>
 
@@ -62,7 +61,6 @@ export default {
 #editorial {
 
     .row {
-        margin-bottom: 25px;
         padding-bottom: 0;
 
         .section-title {
@@ -88,11 +86,13 @@ export default {
 
     .card-grid {
         display: flex;
+        gap: 2%;
+        margin-top: 35px;
+        margin-bottom: 70px;
 
         .card {
-            width: calc(100% / 3);
+            width: calc(96% / 3);
         }
-
     }
 }
 </style>
