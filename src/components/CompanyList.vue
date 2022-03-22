@@ -1,6 +1,6 @@
 <template>
     <li class="item-wrap">
-        <div class="percent">
+        <div class="percent" :class="li.percent === 1 ? 'overlay' : ''">
             <p>{{ li.percent }}<i class="fas fa-percent"></i></p>
         </div>
 
@@ -46,6 +46,19 @@ export default {
         justify-content: center;
         border: 5px solid $manatee;
         border-radius: 999px;
+        position: relative;
+
+        &.overlay::after {
+            content: '';
+            display: block;
+            width: 5px;
+            height: 10px;
+            position: absolute;
+            left: -5px;
+            top: 40%;
+            background-color: $blue-lagoon;
+            border-radius: 999px;
+        }
 
         p {
             font-size: 1.5rem;
@@ -59,7 +72,7 @@ export default {
 
     .description {
         padding: 10px 0;
-        
+
         .title-light {
             font-size: 1.125rem;
             margin-bottom: 15px;
