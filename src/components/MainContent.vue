@@ -10,6 +10,9 @@
         <!-- Company -->
         <companySection /> 
 
+        <!-- loghi -->
+        <loghiSection />
+
 
     </main>
 </template>
@@ -18,6 +21,7 @@
 import secJumbotron from './Jumbotron.vue';
 import logisticSec from './Logistic.vue';
 import companySection from './Company.vue';
+import loghiSection from './Loghi.vue';
 
 export default {
     name: 'mainContent',
@@ -25,6 +29,7 @@ export default {
         secJumbotron,
         logisticSec,
         companySection,
+        loghiSection,
     }
     
 }
