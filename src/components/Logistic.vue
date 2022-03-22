@@ -19,7 +19,7 @@
                             <li>Quality</li>
                             <li>Security</li>
                         </ol>
-                        <button>Read More</button>
+                        <button class="button-green">Read More</button>
                     </div>
                 </div>
 
@@ -103,10 +103,6 @@ export default {
                         @include backTitle;
                         margin-bottom: 15px;
                     }
-                }
-
-                button {
-                    @include buttonGreen;
                 }
             }
         }

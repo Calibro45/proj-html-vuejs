@@ -13,8 +13,8 @@
                     </li>
                 </ol>
 
-                <div class="get-in">
-                    <button>Get in touch</button>
+                <div>
+                    <button class="button-green">Get in touch</button>
                 </div>
             </nav>
 
@@ -25,7 +25,7 @@
                 </h1>
                 <p class="subtitle">For 20 years working with the most innovative in the field of transport.</p>
                 <button class="get-cta">get in touch</button>
-                <button class="read-cta">read more</button>
+                <button class="button-transparent">read more</button>
             </div>
 
         </div>  
@@ -115,10 +115,6 @@ export default {
                     padding: $padding-link;
                 }
             }
-
-            .get-in button {
-                @include buttonGreen;
-            }
         }
 
         .title-wrap {
@@ -146,10 +142,6 @@ export default {
             .get-cta {
                 @include buttonGreen;
                 margin-right: 15px;
-            }
-
-            .read-cta {
-                @include buttonTransparent;
             }
         }
     }

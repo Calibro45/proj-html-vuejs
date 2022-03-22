@@ -13,6 +13,9 @@
         <!-- loghi -->
         <loghiSection />
 
+        <!-- Editorial -->
+        <editorialSection />
+
 
     </main>
 </template>
@@ -22,6 +25,7 @@ import secJumbotron from './Jumbotron.vue';
 import logisticSec from './Logistic.vue';
 import companySection from './Company.vue';
 import loghiSection from './Loghi.vue';
+import editorialSection from './Editorial.vue';
 
 export default {
     name: 'mainContent',
@@ -30,6 +34,7 @@ export default {
         logisticSec,
         companySection,
         loghiSection,
+        editorialSection,
     }
     
 }

@@ -50,6 +50,7 @@ export default {
             img {
                 object-fit: cover;
                 filter: invert(1) contrast(0.5);
+                margin: 0 auto;
             }
         }
     }
