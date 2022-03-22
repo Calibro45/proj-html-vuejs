@@ -23,8 +23,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/scss/variabili.scss";
-@import "../assets/scss/mixins.scss";
 
 .card-wrapper {
     padding: 35px;
