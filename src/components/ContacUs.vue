@@ -4,20 +4,24 @@
             <div class="row">
 
                 <div class="col-6">
-                    <div>
+                    <div class="title">
                         <h5 class="section-title">Send a message</h5>
                         <h2 class="title-dark">Get in <span class="title-decoration-light">Touch</span></h2>
                         <p class="subtitle">We will respond to your message as soon as possible.</p>
                     </div>
 
                     <div class="form">
-                        <input type="text" name="name">
-                        <input type="email" name="email">
-                        <input type="text" name="phone">
-                        <input type="text" name="info">
-                        <textarea name="message" cols="30" rows="10"></textarea>
-                        <button class="button-green">Send</button>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <div class="position">
+                            <input type="text" name="info" placeholder="More Info" class="position">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <textarea name="message" rows="10" placeholder="Message"></textarea>
                     </div>
+                    
+                    <button class="button-green">Send</button>
 
                 </div>
 
@@ -43,6 +47,57 @@ export default {
 
 #contact-us {
     background-color: $saltpan;
+
+    .row {
+
+        .col-6 {
+            width: 66.66%;
+
+            .title {
+                margin-bottom: 30px;
+
+                .title-dark {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .form {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 20px;
+
+                input {
+                    flex-grow: 1;
+                }
+
+                textarea {
+                    flex-grow: 1;
+                    resize: none;
+                }
+
+                .position {
+                    position: relative;
+                    flex-grow: 1;
+
+                    input {
+                        width: 100%;
+                    }
+
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+    }
 }
     
 </style>
