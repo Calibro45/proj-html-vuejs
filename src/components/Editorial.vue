@@ -16,7 +16,8 @@
 
             <div class="card-grid">
 
-                <editorialCard class="card"/>
+                <editorialCard class="card"
+                v-for="(card, i) in cardItems" :key="i" :card="card"/>
 
             </div>
         </div>
@@ -30,6 +31,25 @@ export default {
     name: 'editorialSection',
     components: {
         editorialCard,
+    },
+
+    data() {
+        return {
+            cardItems: [
+                {
+                    img: require('../assets/img/news-1.jpg'),
+                    testo: 'Increasing Creativity is possible for everyone',
+                },
+                {
+                    img: require('../assets/img/news-2.jpg'),
+                    testo: 'Because market research is part of the businessplan',
+                },
+                {
+                    img: require('../assets/img/news-3.jpg'),
+                    testo: 'Working from home is now a trend',
+                },
+            ]
+        }
     }
     
 }

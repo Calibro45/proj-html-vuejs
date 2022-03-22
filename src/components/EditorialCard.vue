@@ -2,11 +2,11 @@
     <div class="card-wrapper">
 
         <figure class="card-image">
-            <img src="../assets/img/news-1.jpg">
+            <img :src="card.img">
         </figure>
 
         <div class="card-body">
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>{{ card.testo }}</p>
         </div>
 
     </div>
@@ -15,6 +15,12 @@
 <script>
 export default {
     name: 'editorialCard',
+    props: {
+        card: {
+            type: Object,
+            required: true,
+        }
+    }
     
 }
 </script>
@@ -35,8 +41,9 @@ export default {
 
     .card-body {
         @include newsCard;
-        font-size: 1.25rem;
+        font-size: 1.125rem;
         line-height: 1.1;
+        text-align: center;
         z-index: 1;
     }
 }
