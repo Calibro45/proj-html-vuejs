@@ -16,6 +16,9 @@
         <!-- Editorial -->
         <editorialSection />
 
+        <!-- Newsletter -->
+        <newsLetter />
+
 
     </main>
 </template>
@@ -26,6 +29,7 @@ import logisticSec from './Logistic.vue';
 import companySection from './Company.vue';
 import loghiSection from './Loghi.vue';
 import editorialSection from './Editorial.vue';
+import newsLetter from './Newsletter.vue';
 
 export default {
     name: 'mainContent',
@@ -35,6 +39,7 @@ export default {
         companySection,
         loghiSection,
         editorialSection,
+        newsLetter,
     }
     
 }
