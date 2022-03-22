@@ -66,3 +66,21 @@
     background-color: rgba($blue-lagoon, 0.3);
     border-radius: 4px;
 }
+
+@mixin newsCard {
+    color: $gray-nurse;
+    position: absolute;
+    right: 25px;
+    bottom: 35px;
+    left: 25px;
+    font-weight: 700;
+}
+
+@mixin cardOverlay {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%
+}

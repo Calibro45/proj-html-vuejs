@@ -28,12 +28,16 @@ export default {
     overflow: hidden;
     position: relative;
 
+    &::after {
+        @include cardOverlay;
+        background-color: rgba($wood-smoke, 0.5);
+    }
+
     .card-body {
-        color: $gray-nurse;
-        position: absolute;
-        right: 25px;
-        bottom: 35px;
-        left: 25px;
+        @include newsCard;
+        font-size: 1.25rem;
+        line-height: 1.1;
+        z-index: 1;
     }
 }
     
