@@ -45,6 +45,10 @@ img {
     margin: 0 auto;
 }
 
+.row {
+    @include row;
+}
+
 .section-title {
     @include sectionTitle;
 }
@@ -55,4 +59,17 @@ img {
 
 .title-light {
     color: $gray-nurse;
+}
+
+.title-decoration-light {
+    @include backTitle;
+}
+
+.title-decoration-dark {
+    @include backTitleDark;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: $manatee;
 }

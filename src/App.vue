@@ -6,8 +6,6 @@
 
     <!-- main -->
     <mainContent />
-    
-      <!-- sezioni main -->
 
     <!-- footer -->
 

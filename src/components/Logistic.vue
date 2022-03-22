@@ -70,7 +70,6 @@ export default {
     background-color: $saltpan;
 
     .row {
-        @include row;
         gap: 3%;
 
         .col-4 {

@@ -60,3 +60,9 @@
     background-color: rgba($gumbo, 0.4);
     border-radius: 4px;
 }
+
+@mixin backTitleDark {
+    color: $gray-nurse;
+    background-color: rgba($blue-lagoon, 0.3);
+    border-radius: 4px;
+}
