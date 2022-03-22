@@ -23,13 +23,10 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <cardA class="col-4" 
+                v-for="(card, i) in cardItem" :key="i" :element="card"/>
 
-                </div>
 
-                <div class="col-4">
-
-                </div>
             </div>
 
         </div>
@@ -37,9 +34,29 @@
 </template>
 
 <script>
+import cardA from './CardA.vue';
 
 export default {
     name: 'loisticSec',
+    components: {
+        cardA,
+    },
+    data() {
+        return {
+            cardItem: [
+                {
+                    img: require('../assets/img/gallery-3.jpg'),
+                    titolo: 'Technology',
+                    descrizione: 'Focused on developing Technology solution adapted to our client\'s needs',
+                },
+                 {
+                    img: require('../assets/img/gallery-5.jpg'),
+                    titolo: 'Transport',
+                    descrizione: 'We develop operational strategies to improve logistical efficiency.',
+                },
+            ]
+        }
+    }
 }
 
 </script>
@@ -54,10 +71,10 @@ export default {
 
     .row {
         @include row;
+        gap: 3%;
 
         .col-4 {
-            width: calc(100% / 3);
-            padding: 20px 10px;
+            width: calc(94% / 3);
 
             .services {
 
