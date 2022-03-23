@@ -23,6 +23,8 @@
 
                 <div class="col">
 
+                    <footerCard />
+                    
                 </div>
 
                 <div class="col">
@@ -39,8 +41,13 @@
 </template>
 
 <script>
+import footerCard from './FooterCard.vue';
+
 export default {
     name: 'footerLinks',
+    components: {
+        footerCard,
+    },
     data() {
         return {
             contactList: [
@@ -106,6 +113,10 @@ export default {
                         display: flex;
                         align-items: center;
                         gap: 10px;
+
+                        i {
+                            color: $gray-nurse;
+                        }
                     }
                 }
             }
