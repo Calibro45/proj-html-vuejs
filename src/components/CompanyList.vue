@@ -79,5 +79,16 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+
+    .item-wrap .description .title-light {
+        color: $river-bed;
+    }
+
+    .subtitle {
+        color: $gray-nurse;
+    }
+}
     
 </style>

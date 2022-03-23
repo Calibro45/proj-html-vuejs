@@ -3,7 +3,7 @@
         
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 col-12">
                     <h5 class="section-title">About the network</h5>
                     <div class="title-wrap">
                         <h2 class="title-light"><span class="title-decoration-dark">The</span> Company</h2>
@@ -49,7 +49,7 @@ export default {
                     descrizione: 'lorem ipsum dolor sit amet consectetur adipiscing elit',
                     percent: 1,
                 },
-            ]
+            ],
         }
     }
 }
@@ -90,6 +90,21 @@ export default {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    #company {
+        background-size: 100% 100%;
+    }
+
+    #company .row .col-12 {
+        width: 100%;
+    }
+
+    #company .row .col-6 .title-wrap .title-light {
+        color: $river-bed;
     }
 }
     
