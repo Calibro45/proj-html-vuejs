@@ -6,10 +6,11 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
         </div>
         <ol class="contact-list">
-            <li class="contact-link">
-                <a href="#" class="link">
-                    <span class="icon"><i class="fas fa-phone"></i></span>
-                    link
+            <li class="contact-link"
+            v-for="(link, i) in contactList" :key="i">
+                <a :href="link.href" class="link">
+                    <span class="icon"><i :class="link.icon"></i></span>
+                    {{ link.text }}
                 </a>
             </li>
         </ol>
@@ -18,9 +19,32 @@
 </template>
 
 <script>
+
 export default {
     name: 'contactUsList',
+    data() {
+        return {
+            contactList: [
+                {
+                    href: '#',
+                    text: '+1 (305) 1234-5678',
+                    icon: 'fas fa-phone',
+                },
+                {
+                    href: '#',
+                    text: 'hello@example.com',
+                    icon: 'fas fa-envelope',
+                },
+                {
+                    href: '#',
+                    text: 'Main Avenue, 987',
+                    icon: 'fas fa-map-marker-alt',
+                },
+            ]
+        }
+    }
 }
+
 </script>
 
 <style lang="scss" scoped>
