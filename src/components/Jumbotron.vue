@@ -129,7 +129,8 @@ export default {
                 color: $gray-nurse;
 
                 span {
-                    background: linear-gradient(0deg, transparent 10%, rgba($blue-lagoon,0.8) 55%, transparent 50%);
+                    background: linear-gradient(0deg, transparent 10%, rgba($blue-lagoon,0.8) 55%, 
+                    transparent 50%);
                 }
             }
 

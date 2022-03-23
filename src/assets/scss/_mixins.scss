@@ -98,3 +98,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin iconStyle {
+    display: inline-block;
+    width: 32px;
+    aspect-ratio: 1;
+    border-radius: 999px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
