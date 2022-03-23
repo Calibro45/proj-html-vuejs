@@ -9,7 +9,10 @@
 
                 <ol class="contact-list">
                     <li class="info-link" v-for="(link, i) in infoLinks" :key="i">
-                        <a :href="link.href"><i :class="link.icon"></i> {{ link.info }}</a>
+                        <a :href="link.href">
+                            <span><i :class="link.icon"></i></span>
+                            {{ link.info }}
+                        </a>
                     </li>
                 </ol>
             </nav>
@@ -77,16 +80,35 @@ export default {
 
             .info-link:not(:last-child) {
                 margin-right: 10px;
+            }
 
-                a {
-                    padding: 5px 8px;
-                }
-                
-                i {
-                    margin-right: 5px;
-                }
+            a {
+                padding: 5px 8px;
+            }   
+
+            span {
+                display: inline-block;
+                text-align: center;
+                vertical-align: middle;
+                width: 20px;
+                height: 20px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 762px) {
+
+    #info-nav .navbar {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    #info-nav .navbar .hours {
+        width: 100%;
+        text-align: center;
     }
 }
     
