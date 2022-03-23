@@ -4,7 +4,7 @@
 
             <nav class="navbar">
                 <div class="logo-wrap">
-                    <h4 class="logo"><span>NEX</span>GEN</h4>
+                    <h4 class="logo"><span>Nex</span>Gen</h4>
                 </div>
 
                 <ol class="link-wrap">
@@ -96,10 +96,9 @@ export default {
 
             .logo-wrap {
                 margin-right: auto;
-                letter-spacing: 0.35rem;
 
                 .logo {
-                    color: $gray-nurse;
+                    @include logoStyle;
 
                     span {
                         @include logo;

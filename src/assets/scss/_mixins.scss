@@ -25,12 +25,20 @@
     padding: 5px 0 5px 15px;
 }
 
+@mixin logoStyle {
+    letter-spacing: 0.35rem;
+    color: $gray-nurse;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
 @mixin button {
     text-transform: uppercase;
     padding: 10px 18px;
     color: $gray-nurse;
     border-radius: 2px;
     font-weight: 700;
+    font-size: 0.875rem;
 }
 
 @mixin buttonGreen {
@@ -39,7 +47,7 @@
 
 @mixin buttonTransparent {
     background-color: transparent;
-    border: 1px solid $blue-lagoon;
+    border: 1px solid rgba($blue-lagoon, 0.5);
 }
 
 @mixin row {
