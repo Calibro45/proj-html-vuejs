@@ -3,7 +3,7 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 col-12">
                     <h5 class="section-title">Our buisiness area</h5>
                     <div class="services">
                         <h3 class="title-dark">Logistics Services</h3>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
 
-                <cardA class="col-4" 
+                <cardA class="col-4 col-6 col-s" 
                 v-for="(card, i) in cardItem" :key="i" :element="card"/>
 
 
@@ -70,7 +70,7 @@ export default {
     background-color: $saltpan;
 
     .row {
-        gap: 3%;
+        gap: 20px 3%;
 
         .col-4 {
             width: calc(94% / 3);
@@ -107,6 +107,25 @@ export default {
             }
         }
     }
+}
+
+@media screen and (max-width: 762px) {
+
+    #logistic .row .col-12 {
+        width: 100%;
+    }
+
+    #logistic .row .col-6 {
+        width: calc(97% / 2);
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    #logistic .row .col-s {
+        width: 100%;
+    }
+
 }
 
 </style>
