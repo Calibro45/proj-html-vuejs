@@ -89,6 +89,7 @@ export default {
         gap: 2%;
         margin-top: 35px;
         margin-bottom: 70px;
+        padding: 0 10px;
 
         .card {
             width: calc(96% / 3);

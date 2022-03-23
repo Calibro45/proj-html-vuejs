@@ -84,3 +84,17 @@
     bottom: 0;
     width: 100%
 }
+
+@mixin radiantBackground {
+    content: '';
+    display: block;
+    width: 110px;
+    height: 50px;
+    background-image: radial-gradient($dot-radiant), 
+    radial-gradient($dot-radiant);
+    background-position: 0 0;
+    background-size: 12px 12px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -64,7 +64,13 @@ export default {
     background-position: right;
     background-size: 50% 100%;
     background-repeat: no-repeat;
+    position: relative;
 
+    &::before,
+    &::after {
+        @include radiantBackground;
+    }
+    
     .row {
 
         .col-6 {

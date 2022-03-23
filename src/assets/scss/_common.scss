@@ -46,6 +46,7 @@ textarea {
 }
 
 input::placeholder,
+textarea::placeholder,
 input:focus {
     color: $manatee;
 }
