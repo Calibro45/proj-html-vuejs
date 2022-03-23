@@ -88,6 +88,7 @@ export default {
 
         .navbar {
             @include navbar;
+            justify-content: space-evenly;
             text-transform: uppercase;
             gap: 20px;
             padding-top: 20px;
@@ -159,6 +160,12 @@ export default {
 }
 
 @media screen and (max-width: 576px) {
+
+    #jumbotron .container .navbar .logo-wrap {
+
+        width: 100%;
+        text-align: center;
+    }
 
     #jumbotron .container .title-wrap {
         width: 100%;
