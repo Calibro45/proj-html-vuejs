@@ -80,6 +80,10 @@ export default {
             padding: 5px 0;
             justify-content: center;
             flex-wrap: wrap;
+
+            &:hover {
+                color:$river-bed;
+            }
                     
             .icon {
                 @include iconStyle;

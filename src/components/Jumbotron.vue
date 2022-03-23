@@ -142,6 +142,10 @@ export default {
             .get-cta {
                 @include buttonGreen;
                 margin-right: 15px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }

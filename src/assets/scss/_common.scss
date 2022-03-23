@@ -24,7 +24,12 @@ ol, ul {
 a {
     text-decoration: none;
     color: currentColor;
+    
+    &:hover {
+        color: $blue-lagoon;
+    }
 }
+
 
 button {
     @include button;
@@ -98,8 +103,16 @@ img {
 
 .button-green {
     @include buttonGreen;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .button-transparent {
     @include buttonTransparent;
+
+    &:hover {
+        background-color: rgba($gumbo, 0.6);
+    }
 }
