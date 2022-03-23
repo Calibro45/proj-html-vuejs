@@ -39,6 +39,10 @@ export default {
         background-color: rgba($wood-smoke, 0.5);
     }
 
+    .card-image {
+        aspect-ratio: 1
+    }
+
     .card-body {
         @include newsCard;
         font-size: 1.125rem;

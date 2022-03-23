@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col">
+                <div class="col col-12">
                     <div class="logo-wrap">
                         <h4 class="logo"><span class="logo-head">Nex</span> Gen</h4>
                         <p>A functional HTML template for corporate & busines.</p>
@@ -21,22 +21,16 @@
                     <button class="button-transparent">Get in touch</button>
                 </div>
 
-                <div class="col">
-
+                <div class="col col-4 col-6">
                     <footerCard :titolo="'About'" :links="linksA"/>
-
                 </div>
 
-                <div class="col">
-
+                <div class="col col-4 col-6">
                     <footerCard :titolo="'Transport'" :links="linksB"/>
-
                 </div>
 
-                <div class="col">
-
+                <div class="col col-4 col-6">
                     <footerCard :titolo="'Support'" :links="linksC"/>
-
                 </div>
                 
             </div>
@@ -100,7 +94,7 @@ export default {
     font-size: 0.875rem;
 
     .row {
-        gap: 2%;
+        gap: 20px 2%;
 
         .col {
             width: calc(94% / 4);
@@ -137,6 +131,33 @@ export default {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 762px) {
+
+    #footer-links .row .col-12 {
+        width: 100%;
+    }
+
+    #footer-links .row .col-4 {
+        width: calc(94% / 3);
+    }
+
+    #footer-links .row .col .contacts {
+        display: flex;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    #footer-links .row .col-6 {
+        width: calc(94% / 2);
+    }
+
+    #footer-links .row .col .contacts {
+        display: block;
     }
 }
     
