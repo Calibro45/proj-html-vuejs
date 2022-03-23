@@ -3,13 +3,13 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-8">
+                <div class="col-8 col-12">
 
                     <contactForm />
 
                 </div>
 
-                <div class="col-4">
+                <div class="col-4 col">
 
                     <contactUsList />   
 
@@ -53,6 +53,17 @@ export default {
             width: calc(( 96% / 12 ) * 4);
             padding: 15px 10px;
         }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    #contact-us .row .col-12 {
+        width: 100%;
+    }
+
+    #contact-us .row .col {
+        width: 80%;
     }
 }
     

@@ -10,7 +10,7 @@
             v-for="(link, i) in contactList" :key="i">
                 <a :href="link.href" class="link">
                     <span class="icon"><i :class="link.icon"></i></span>
-                    {{ link.text }}
+                    <span class="text-link">{{ link.text }}</span>
                 </a>
             </li>
         </ol>
@@ -78,10 +78,16 @@ export default {
             gap: 10px;
             align-items: center;
             padding: 5px 0;
+            justify-content: center;
+            flex-wrap: wrap;
                     
             .icon {
                 @include iconStyle;
                 background-color: rgba($gumbo, 0.4);
+            }
+
+            .text-link {
+                flex-grow: 1;
             }
         }
     }
