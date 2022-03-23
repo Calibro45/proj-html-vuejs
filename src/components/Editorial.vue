@@ -81,12 +81,14 @@ export default {
 
         .see-cta {
             align-self: flex-end;
+            margin-top: 20px;
         }
     }
 
     .card-grid {
         display: flex;
-        gap: 2%;
+        flex-wrap: wrap;
+        gap: 20px 2%;
         margin-top: 35px;
         margin-bottom: 70px;
         padding: 0 10px;
@@ -94,6 +96,24 @@ export default {
         .card {
             width: calc(96% / 3);
         }
+    }
+}
+
+@media screen and (max-width: 762px) {
+
+    #editorial .card-grid .card {
+        width: calc(96% / 2);
+    }
+
+    #editorial .card-grid .card:last-child {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    #editorial .card-grid .card {
+        width: 100%;
     }
 }
 </style>
