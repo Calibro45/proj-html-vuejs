@@ -23,15 +23,19 @@
 
                 <div class="col">
 
-                    <footerCard />
-                    
-                </div>
-
-                <div class="col">
+                    <footerCard :titolo="'About'" :links="linksA"/>
 
                 </div>
 
                 <div class="col">
+
+                    <footerCard :titolo="'Transport'" :links="linksB"/>
+
+                </div>
+
+                <div class="col">
+
+                    <footerCard :titolo="'Support'" :links="linksC"/>
 
                 </div>
                 
@@ -42,6 +46,7 @@
 
 <script>
 import footerCard from './FooterCard.vue';
+import state from '../store.js';
 
 export default {
     name: 'footerLinks',
@@ -68,6 +73,17 @@ export default {
                 },
             ],
         }
+    },
+    computed: {
+        linksA: function() {
+            return state.linkListA;
+        },
+        linksB: function() {
+            return state.linkListB;
+        },
+        linksC: function() {
+            return state.linkListC;
+        }
     }
 }
 </script>
@@ -84,10 +100,10 @@ export default {
     font-size: 0.875rem;
 
     .row {
-        gap: 1%;
+        gap: 2%;
 
         .col {
-            width: calc(97% / 4);
+            width: calc(94% / 4);
 
             .logo-wrap {
                 margin-bottom: 25px;

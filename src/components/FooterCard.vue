@@ -1,13 +1,13 @@
 <template>
     <div class="card-wrapper">
 
-        <h4 class="card-title">TItolo</h4>
+        <h4 class="card-title">{{ titolo }}</h4>
 
         <ol class="card-list">
-            <li class="list-item">
+            <li class="list-item" v-for="(link,i) in links" :key="i">
                 <a href="#">
                     <i class="fas fa-chevron-right"></i>
-                    Link
+                    {{ link }}
                 </a>
             </li>
         </ol>
@@ -19,6 +19,11 @@
 
 export default {
     name: 'footerCard',
+    props: {
+        titolo: String,
+        link: String,
+        links: Array,
+    }
 }
 
 </script>
@@ -28,7 +33,7 @@ export default {
 @import "../assets/scss/mixins.scss";
 
 .card-wrapper {
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     background-color: rgba($manatee, 0.1);
 
