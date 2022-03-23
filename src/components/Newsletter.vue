@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-6">
+                <div class="col-6 col-12">
                     <div class="title">
                         <h5 class="section-title">Newsletter</h5>
                         <h2 class="title-light"><span class="title-decoration-dark">Know</span> First</h2>
@@ -13,7 +13,7 @@
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 col-12">
                     <div class="form">
                         <input type="text" name="nome" placeholder="Name">
                         <input type="email" name="email" placeholder="Email">
@@ -69,6 +69,21 @@ export default {
             }
         }
     }  
+}
+
+@media screen and (max-width: 576px) {
+
+    input::placeholder {
+        color: $gray-nurse;
+    }
+
+    #news-letter .row .col-12 {
+        width: 100%;
+
+        .title, .form {
+            padding: 25px 50px;
+        }
+    }
 }
 
 </style>

@@ -46,9 +46,12 @@ textarea {
 }
 
 input::placeholder,
-textarea::placeholder,
-input:focus {
+textarea::placeholder {
     color: $manatee;
+}
+
+input:focus {
+    color: $gray-nurse;
 }
 
 img {
