@@ -146,5 +146,23 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 762px) {
+
+    #jumbotron .container .title-wrap {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    #jumbotron .container .title-wrap {
+        width: 100%;
+    }
+
+    #jumbotron .container .title-wrap .get-cta {
+        margin-bottom: 20px;
+    }
+}
     
 </style>

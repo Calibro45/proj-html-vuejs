@@ -65,9 +65,11 @@ export default {
         @include navbar;
         font-size: 12px;
         padding: 8px 10px;
+        row-gap: 10px;
 
         .hours {
             margin-right: auto;
+            padding: 5px 8px;
         }
 
         .contact-list {
