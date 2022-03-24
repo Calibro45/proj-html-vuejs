@@ -9,6 +9,10 @@
                 <p>&copy; 2020 NEXGEN is proudly powered by <a href="#">Codings</a></p>
             </div>
 
+            <div class="icon">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+
         </div>
     </section>
 </template>
@@ -25,6 +29,7 @@ export default {
 
 #footer-credits {
     background-color: $wood-smoke;
+    position: relative;
 
     .container {
         display: flex;
@@ -38,6 +43,20 @@ export default {
 
             a {
                 color: $blue-lagoon;
+            }
+        }
+
+        .icon {
+            @include iconFooter;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            top: -10px;
+            
+            i {
+                color: $wood-smoke;
+                font-size: 18px;
+                font-weight: 700;
             }
         }
     }

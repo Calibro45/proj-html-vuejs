@@ -117,3 +117,14 @@
     justify-content: center;
     flex-shrink: 0;
 }
+
+@mixin iconFooter {
+    width: 34px;
+    aspect-ratio: 1;
+    border-radius: 999px;
+    background-color: rgba($manatee, 0.2);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
