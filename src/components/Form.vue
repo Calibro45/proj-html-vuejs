@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/scss/variabili.scss";
 
 .title {
     margin-bottom: 30px;
@@ -49,6 +50,10 @@ export default {
 
     input {
         flex-grow: 1;
+
+        &:focus {
+            color: $river-bed;
+        }
     }
 
     textarea {
